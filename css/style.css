@@ -1,0 +1,219 @@
+
+@media (max-width: 600px) {
+  .split {
+    width: 100%;
+    position: fixed;
+    top: 1;
+    overflow-x: hidden;
+    /* padding-top: 20px; */
+  }
+
+  h2{
+    font-size: 35px !important;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  p{
+    font-size: 20px !important;
+    margin: 10px;
+  }
+
+  .icons{
+    font-size:40px !important;
+  }
+  .right {
+    visibility: hidden !important;
+    display: none !important;
+  }
+  .left {
+    width: 100% !important;
+    background-color: #00ace6;
+    background-image: linear-gradient(#00bfff,#99e6ff);
+  }
+}
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index:1;
+  top: 0;
+  overflow-x: hidden;
+  /* padding-top: 20px; */
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
+  /* background-color: #00ace6;
+  background-image: linear-gradient(#00bfff,#99e6ff); */
+}
+h2{
+  font-family:'Comfortaa';
+  display: inline-block;
+  white-space: nowrap;
+  color: white;
+  font-size: 30px;
+  font-size: 4vw;
+  margin: 10px;
+}
+
+h3{
+  
+  font-family:'Comfortaa';
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: lighter;
+  background: -webkit-linear-gradient(-45deg,#23A6D5, #23D5AB);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+  border: 100px;
+  border-color: black;
+  font-size: 3vw;
+  margin: 0;
+}
+
+p{
+  margin: 10px;
+  font-family:'Comfortaa';
+  color: white;
+  font-weight: lighter;
+  font-size: 10px;
+  font-size: 2vw;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #cccccc;
+  background-image: url('../foto2.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right !important;
+  position: absolute;
+}
+
+
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+a{
+  display:inline-block;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.icons{
+  display: inline-block;
+  font-size:3em;
+}
+
+
+i{
+  color: white;
+}
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px ;
+    border-radius: 6px;
+    font-family:'Comfortaa';
+    display: inline-block;
+    overflow: visible;
+    white-space: nowrap;
+    font-weight: lighter;
+    width: auto;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    opacity: 0;
+    transition: opacity 0.4s;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}

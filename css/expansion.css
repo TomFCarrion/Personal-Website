@@ -1,0 +1,82 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: visible;
+    transition: 0.5s;
+    padding-top: 15px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    display: inline;
+    padding-top: 0;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 36px;
+    margin-left: 2px;
+
+}
+
+
+div.gallery {
+    /* margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+    display: grid; */
+    cursor: pointer;
+    margin: 15px;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    vertical-align: top;
+  }
+
+
+div.gallery:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+}
+
+div.gallery img {
+  transition: .3s;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+div.title{
+  font-family:'Comfortaa';
+  margin: 5px 0 0 0;
+  font-size: 20px;
+  white-space: normal;
+}
+
+div.desc {
+  font-family:'Comfortaa';
+  font-weight: lighter;
+  font-size: 15px;
+  color: #44546b;
+  margin: 10px 0 0 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

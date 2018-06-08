@@ -65,7 +65,7 @@ h2{
 }
 
 h3{
-  
+
   font-family:'Comfortaa';
   display: inline-block;
   white-space: nowrap;
@@ -91,8 +91,8 @@ p{
 /* Control the right side */
 .right {
   right: 0;
-  background-color: #cccccc;
-  background-image: url('../foto2.jpeg');
+  background: -webkit-linear-gradient(-45deg,#23A6D5, #23D5AB);
+  background-image: url('../foto3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right !important;

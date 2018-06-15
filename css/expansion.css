@@ -51,7 +51,7 @@ div.gallery {
 
 
 div.gallery:hover {
-  box-shadow: 0 0 15px rgba(0,0,0,.3);
+  box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
 
 div.gallery img {
@@ -61,9 +61,12 @@ div.gallery img {
   max-height: 100%;
   object-fit: cover;
 }
+
+
 div.title{
   font-family:'Comfortaa';
   margin: 5px 0 0 0;
+  padding-left: 10px;
   font-size: 20px;
   white-space: normal;
 }
@@ -73,7 +76,7 @@ div.desc {
   font-weight: lighter;
   font-size: 15px;
   color: #44546b;
-  margin: 10px 0 0 0;
+  padding-left: 10px;
 }
 
 @media screen and (max-height: 450px) {
